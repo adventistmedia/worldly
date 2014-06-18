@@ -34,11 +34,11 @@ module Worldly
     end
 
     def fields
-      @data['fields'] || {'city' => 'City'}
+      symbolize_keys(@data['fields']) || {city: 'City'}
     end
 
     def has_field?(f)
-      fields.key?(f.to_s)
+      fields.key?(f)
     end
 
     def required_fields
@@ -46,15 +46,15 @@ module Worldly
     end
 
     def optional_fields
-      @data['optional_fields'] || []
+      (@data['optional_fields'] || []).map(&:to_sym)
     end
 
     def all_fields(exclude_country=false)
       af = {
-        'address1' => 'Address 1',
-        'address2' => 'Address 2'
+        address1: 'Address 1',
+        address2: 'Address 2'
       }.merge(fields)
-      af['country'] = 'Country' unless exclude_country
+      af[:country] = 'Country' unless exclude_country
       af
     end
 
@@ -70,7 +70,7 @@ module Worldly
     end
 
     def field_options(f)
-      f=='region' && use_regions? ? regions : []
+      f== :region && use_regions? ? regions.map{|r| [r[1],r[0]] } : []
     end
 
     def regions?
@@ -78,7 +78,7 @@ module Worldly
     end
 
     def use_regions?
-      has_field?('region') && regions?
+      has_field?(:region) && regions?
     end
 
     def regions
@@ -110,6 +110,11 @@ module Worldly
 
     def region_file_path
       File.join(File.dirname(__FILE__), '..', "data/regions/#{@code}.yaml")
+    end
+
+    def symbolize_keys(hash)
+      hash ||= {}
+      Hash[hash.map{ |k, v| [k.to_sym, v] }]
     end
 
   end
