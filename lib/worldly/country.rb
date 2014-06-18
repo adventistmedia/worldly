@@ -58,6 +58,21 @@ module Worldly
       af
     end
 
+    def field_info
+      @fields_data ||= fields.inject({}) do |hash,values|
+        hash[values[0]] = {
+          name: values[1],
+          required: required_fields.include?(values[0]),
+          options: field_options(values[0])
+        }
+        hash
+      end
+    end
+
+    def field_options(f)
+      f=='region' && use_regions? ? regions : []
+    end
+
     def regions?
       @regions_exist ||= File.exist?(region_file_path)
     end
