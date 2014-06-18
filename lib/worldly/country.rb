@@ -6,35 +6,35 @@ module Worldly
 
     def initialize(code)
       @code = code.to_s.upcase
-      @data = Data[@code]
+      @data = symbolize_keys(Data[@code])
     end
 
     def name
-      @data['name']
+      @data[:name]
+    end
+
+    def official_name
+      @data[:official_name] || name
     end
 
     def alpha2
-      @data['alpha2']
+      @data[:alpha2]
     end
 
     def alpha3
-      @data['alpha3']
+      @data[:alpha3]
     end
 
     def country_code
-      @data['country_code']
+      @data[:country_code]
     end
 
     def dialing_prefix
-      @data['dialing_prefix']
+      @data[:dialing_prefix]
     end
 
     def format
-      @data['format'] || "{{address1}}\n{{address2}}\n{{city}}\n{{country}}"
-    end
-
-    def fields
-      symbolize_keys(@data['fields'] || {city: 'City'})
+      @data[:format] || "{{address1}}\n{{address2}}\n{{city}}\n{{country}}"
     end
 
     def has_field?(f)
@@ -42,43 +42,19 @@ module Worldly
     end
 
     def required_fields
-      fields.keys - optional_fields
+      fields.select{|k,v| v[:required] }
     end
 
-    def optional_fields
-      (@data['optional_fields'] || []).map(&:to_sym)
+    def fields
+      @fields ||= build_fields
     end
 
-    def all_fields(exclude_country=false)
-      af = {
-        address1: 'Address 1',
-        address2: 'Address 2'
-      }.merge(fields)
-      af[:country] = 'Country' unless exclude_country
-      af
-    end
-
-    def field_info
-      @fields_data ||= fields.inject({}) do |hash,values|
-        hash[values[0]] = {
-          name: values[1],
-          required: required_fields.include?(values[0]),
-          options: field_options(values[0])
-        }
-        hash
-      end
-    end
-
-    def field_options(f)
-      f== :region && use_regions? ? regions.map{|r| [r[1],r[0]] } : []
+    def region_options
+      regions.to_a.map{|r| [ r[1], r[0] ] }
     end
 
     def regions?
-      @regions_exist ||= File.exist?(region_file_path)
-    end
-
-    def use_regions?
-      has_field?(:region) && regions?
+      @has_regions ||= File.exist?(region_file_path)
     end
 
     def regions
@@ -113,8 +89,45 @@ module Worldly
     end
 
     def symbolize_keys(hash)
-      hash ||= {}
-      Hash[hash.map{ |k, v| [k.to_sym, v] }]
+      hash.inject({}){|result, (key, value)|
+        new_key = case key
+                  when String then key.to_sym
+                  else key
+                  end
+        new_value = case value
+                    when Hash then symbolize_keys(value)
+                    else value
+                    end
+        result[new_key] = new_value
+        result
+      }
+    end
+
+    def format_value(value)
+      formatted_field = value.to_s.strip
+      f.each do |f|
+        case f.split(',').first
+        when 'upcase'
+          formatted_field.upcase!
+        when 'split'
+          m, separator, indexes = f.split(',')
+          indexes.each do |index|
+            formatted_field.insert(separator, index)
+          end
+        end
+      end
+      formatted_field
+    end
+
+    # all fields are required by default unless otherwise stated
+    def build_fields
+      if @data.key?(:fields)
+        @data[:fields].each do |k,v|
+          v[:required] = true unless v.key?(:required)
+        end
+      else
+        {city: {label:'City', required: true} }
+      end
     end
 
   end

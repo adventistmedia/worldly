@@ -6,8 +6,10 @@ AD:
   country_code: '376'
   dialing_prefix: '00'
   fields:
-    city: 'City'
-    postcode: 'Post Code'
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AE:
   name: United Arab Emirates
@@ -16,7 +18,8 @@ AE:
   country_code: '971'
   dialing_prefix: '00'
   fields:
-    city: 'City'
+    city:
+      label: City
   format: '{{address1}}\n{{address2}}\n{{city}}\n{{country}}'
 AF:
   name: Afghanistan
@@ -25,8 +28,10 @@ AF:
   country_code: '93'
   dialing_prefix: '00'
   fields:
-    city: 'City'
-    postcode: 'Post Code'
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{city}}\n{{postcode}}\n{{country}}'
 AG:
   name: Antigua and Barbuda
@@ -53,8 +58,10 @@ AM:
   country_code: '374'
   dialing_prefix: '00'
   fields:
-    city: 'City'
-    postcode: 'Post Code'
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AN:
   name: Netherlands Antilles
@@ -81,9 +88,12 @@ AR:
   country_code: '54'
   dialing_prefix: '00'
   fields:
-    city: 'City'
-    postcode: 'Post Code'
-    region: 'Province'
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
+    region:
+      label: Province
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AS:
   name: American Samoa
@@ -92,7 +102,8 @@ AS:
   country_code: '1'
   dialing_prefix: '011'
   fields:
-    city: 'City'
+    city:
+      label: City
   format: '{{address1}}\n{{address2}}\n{{city}}\n{{country}}'
 AT:
   name: Austria
@@ -101,8 +112,10 @@ AT:
   country_code: '43'
   dialing_prefix: '00'
   fields:
-    city: 'City'
-    postcode: 'Post Code'
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AU:
   name: Australia
@@ -111,9 +124,17 @@ AU:
   country_code: '61'
   dialing_prefix: '0011'
   fields:
-    city: 'City'
-    region: 'State'
-    postcode: 'Post Code'
+    city:
+      label: City
+      format:
+        - upcase
+    region:
+      label: State
+      format:
+        - code
+        - upcase
+    postcode:
+      label: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}'
 AW:
   name: Aruba
@@ -134,8 +155,10 @@ AZ:
   country_code: '994'
   dialing_prefix: '810'
   fields:
-    city: 'City'
-    postcode: 'Post Code'
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 BA:
   name: Bosnia and Herzegovina
@@ -234,8 +257,10 @@ BS:
   country_code: '1'
   dialing_prefix: '011'
   fields:
-    city: 'City'
-    region: 'Island'
+    city:
+      label: City
+    region:
+      label: Island
   format: '{{address1}}\n{{address2}}\n{{city}}, {{region}}\n{{country}}'
 BT:
   name: Bhutan
@@ -274,9 +299,20 @@ CA:
   country_code: '1'
   dialing_prefix: '011'
   fields:
-    city: 'Municipality'
-    region: 'Province'
-    postcode: 'Postal Code'
+    city:
+      label: City
+      format:
+        - upcase
+    region:
+      label: Province
+      format:
+        - code
+        - upcase
+    postcode:
+      label: 'Postal Code'
+      format:
+        - upcase
+        - "split, ,3"
   format: '{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}'
 CC:
   name: Cocos (Keeling) Islands
@@ -513,9 +549,17 @@ GB:
   country_code: '44'
   dialing_prefix: '00'
   fields:
-    locality: 'Town'
-    city: 'Postal Town'
-    postcode: 'Post Code'
+    locality:
+      label: 'Town'
+      required: false
+    city:
+      label: 'City'
+      format:
+        - upcase
+    postcode:
+      label: 'Post Code'
+      format:
+        - upcase
   format: '{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}'
 GD:
   name: Grenada
@@ -686,8 +730,12 @@ IN:
   country_code: '91'
   dialing_prefix: '00'
   fields:
-    city: 'City'
-    postcode: 'PIN Code'
+    city:
+      label: City
+      format:
+        - upcase
+    postcode:
+      label: 'PIN Code'
   format: '{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{country}}'
 IO:
   name: British Indian Ocean Territory
@@ -780,7 +828,7 @@ KN:
   country_code: '1'
   dialing_prefix: '011'
 KP:
-  name: Korea, Democratic People's Republic Of
+  name: "Korea, Democratic People's Republic Of"
   alpha2: KP
   alpha3: PRK
   country_code: '850'
@@ -1007,6 +1055,14 @@ MY:
   alpha3: MYS
   country_code: '60'
   dialing_prefix: '00'
+  fields:
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
+    region:
+      label: State
+  format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{region}}\n{{country}}'
 MZ:
   name: Mozambique
   alpha2: MZ
@@ -1085,12 +1141,14 @@ NZ:
   alpha3: NZL
   country_code: '64'
   dialing_prefix: '00'
-  optional_fields:
-    - locality
   fields:
-    locality: Suburb
-    city: City
-    postcode: Post Code
+    locality:
+      label: Suburb
+      required: false
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}'
 OM:
   name: Oman
@@ -1212,6 +1270,14 @@ RU:
   alpha3: RUS
   country_code: '7'
   dialing_prefix: '810'
+  fields:
+    city:
+      label: City
+    region:
+      label: Province
+    postcode:
+      label: 'Post Code'
+  format: '{{address1}}\n{{address2}}\n{{city}}\n{{region}}\n{{country}}\n{{postcode}}'
 RW:
   name: Rwanda
   alpha2: RW
@@ -1248,12 +1314,29 @@ SE:
   alpha3: SWE
   country_code: '46'
   dialing_prefix: '00'
+  fields:
+    city:
+      label: City
+      format:
+        - upcase
+    postcode:
+      label: 'Post Code'
+      format:
+        - upcase
+  format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 SG:
   name: Singapore
+  official_name: Republic Of Singapore
   alpha2: SG
   alpha3: SGP
   country_code: '65'
   dialing_prefix: '001'
+  fields:
+    postcode:
+      label: 'Post Code'
+    region:
+      label: 'City-State'
+  format: '{{address1}}\n{{address2}}\n{{region}} {{postcode}}\n{{country}}'
 SH:
   name: Saint Helena
   alpha2: SH
@@ -1465,9 +1548,15 @@ US:
   country_code: '1'
   dialing_prefix: '011'
   fields:
-    city: 'City'
-    region: 'State'
-    postcode: 'Zip Code'
+    city:
+      label: City
+    postcode:
+      label: 'Zip Code'
+    region:
+      label: State
+      format:
+        - code
+        - upcase
   format: '{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}'
 UY:
   name: Uruguay
