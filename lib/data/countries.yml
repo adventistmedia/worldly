@@ -1,0 +1,1561 @@
+---
+AD:
+  name: Andorra
+  alpha2: AD
+  alpha3: AND
+  country_code: '376'
+  dialing_prefix: '00'
+  fields:
+    city: 'City'
+    postcode: 'Postal Code'
+  format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
+AE:
+  name: United Arab Emirates
+  alpha2: AE
+  alpha3: ARE
+  country_code: '971'
+  dialing_prefix: '00'
+  fields:
+    city: 'City'
+  format: '{{address1}}\n{{address2}}\n{{city}}\n{{country}}'
+AF:
+  name: Afghanistan
+  alpha2: AF
+  alpha3: AFG
+  country_code: '93'
+  dialing_prefix: '00'
+  fields:
+    city: 'City'
+    postcode: 'Postal Code'
+  format: '{{address1}}\n{{address2}}\n{{city}}\n{{postcode}}\n{{country}}'
+AG:
+  name: Antigua and Barbuda
+  alpha2: AG
+  alpha3: ATG
+  country_code: '1'
+  dialing_prefix: '011'
+AI:
+  name: Anguilla
+  alpha2: AI
+  alpha3: AIA
+  country_code: '1'
+  dialing_prefix: '011'
+AL:
+  name: Albania
+  alpha2: AL
+  alpha3: ALB
+  country_code: '355'
+  dialing_prefix: '00'
+AM:
+  name: Armenia
+  alpha2: AM
+  alpha3: ARM
+  country_code: '374'
+  dialing_prefix: '00'
+  fields:
+    city: 'City'
+    postcode: 'Postal Code'
+  format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
+AN:
+  name: Netherlands Antilles
+  alpha2: AN
+  alpha3: ANT
+  country_code: '599'
+  dialing_prefix: '00'
+AO:
+  name: Angola
+  alpha2: AO
+  alpha3: AGO
+  country_code: '244'
+  dialing_prefix: '00'
+AQ:
+  name: Antarctica
+  alpha2: AQ
+  alpha3: ATA
+  country_code: '672'
+  dialing_prefix: ''
+AR:
+  name: Argentina
+  alpha2: AR
+  alpha3: ARG
+  country_code: '54'
+  dialing_prefix: '00'
+  fields:
+    city: 'City'
+    postcode: 'Postal Code'
+    region: 'Province'
+  format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
+AS:
+  name: American Samoa
+  alpha2: AS
+  alpha3: ASM
+  country_code: '1'
+  dialing_prefix: '011'
+  fields:
+    city: 'City'
+  format: '{{address1}}\n{{address2}}\n{{city}}\n{{country}}'
+AT:
+  name: Austria
+  alpha2: AT
+  alpha3: AUT
+  country_code: '43'
+  dialing_prefix: '00'
+  fields:
+    city: 'City'
+    postcode: 'Postal Code'
+  format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
+AU:
+  name: Australia
+  alpha2: AU
+  alpha3: AUS
+  country_code: '61'
+  dialing_prefix: '0011'
+  fields:
+    city: 'City'
+    region: 'State'
+    postcode: 'Postal Code'
+  format: '{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}'
+AW:
+  name: Aruba
+  alpha2: AW
+  alpha3: ABW
+  country_code: '297'
+  dialing_prefix: '00'
+AX:
+  name: "Åland Islands"
+  alpha2: AX
+  alpha3: ALA
+  country_code: '358'
+  dialing_prefix: ''
+AZ:
+  name: Azerbaijan
+  alpha2: AZ
+  alpha3: AZE
+  country_code: '994'
+  dialing_prefix: '810'
+  fields:
+    city: 'City'
+    postcode: 'Postal Code'
+  format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
+BA:
+  name: Bosnia and Herzegovina
+  alpha2: BA
+  alpha3: BIH
+  country_code: '387'
+  dialing_prefix: '00'
+BB:
+  name: Barbados
+  alpha2: BB
+  alpha3: BRB
+  country_code: '1'
+  dialing_prefix: '011'
+BD:
+  name: Bangladesh
+  alpha2: BD
+  alpha3: BGD
+  country_code: '880'
+  dialing_prefix: '00'
+BE:
+  name: Belgium
+  alpha2: BE
+  alpha3: BEL
+  country_code: '32'
+  dialing_prefix: '00'
+BF:
+  name: Burkina Faso
+  alpha2: BF
+  alpha3: BFA
+  country_code: '226'
+  dialing_prefix: '00'
+BG:
+  name: Bulgaria
+  alpha2: BG
+  alpha3: BGR
+  country_code: '359'
+  dialing_prefix: '00'
+BH:
+  name: Bahrain
+  alpha2: BH
+  alpha3: BHR
+  country_code: '973'
+  dialing_prefix: '00'
+BI:
+  name: Burundi
+  alpha2: BI
+  alpha3: BDI
+  country_code: '257'
+  dialing_prefix: '00'
+BJ:
+  name: Benin
+  alpha2: BJ
+  alpha3: BEN
+  country_code: '229'
+  dialing_prefix: '00'
+BL:
+  name: Saint Barthélemy
+  alpha2: BL
+  alpha3: BLM
+  country_code: '590'
+  dialing_prefix: ''
+BM:
+  name: Bermuda
+  alpha2: BM
+  alpha3: BMU
+  country_code: '1'
+  dialing_prefix: '011'
+BN:
+  name: Brunei Darussalam
+  alpha2: BN
+  alpha3: BRN
+  country_code: '673'
+  dialing_prefix: '00'
+BO:
+  name: Bolivia
+  alpha2: BO
+  alpha3: BOL
+  country_code: '591'
+  dialing_prefix: '0010'
+BQ:
+  name: Bonaire, Sint Eustatius and Saba
+  alpha2: BQ
+  alpha3: BES
+  country_code: '599'
+  dialing_prefix: '00'
+BR:
+  name: Brazil
+  alpha2: BR
+  alpha3: BRA
+  country_code: '55'
+  dialing_prefix: '0014'
+BS:
+  name: Bahamas
+  alpha2: BS
+  alpha3: BHS
+  country_code: '1'
+  dialing_prefix: '011'
+  fields:
+    city: 'City'
+    region: 'Island'
+  format: '{{address1}}\n{{address2}}\n{{city}}, {{region}}\n{{country}}'
+BT:
+  name: Bhutan
+  alpha2: BT
+  alpha3: BTN
+  country_code: '975'
+  dialing_prefix: '00'
+BV:
+  name: Bouvet Island
+  alpha2: BV
+  alpha3: BVT
+  country_code: ''
+  dialing_prefix: ''
+BW:
+  name: Botswana
+  alpha2: BW
+  alpha3: BWA
+  country_code: '267'
+  dialing_prefix: '00'
+BY:
+  name: Belarus
+  alpha2: BY
+  alpha3: BLR
+  country_code: '375'
+  dialing_prefix: '810'
+BZ:
+  name: Belize
+  alpha2: BZ
+  alpha3: BLZ
+  country_code: '501'
+  dialing_prefix: '00'
+CA:
+  name: Canada
+  alpha2: CA
+  alpha3: CAN
+  country_code: '1'
+  dialing_prefix: '011'
+  fields:
+    city: 'Municipality'
+    region: 'Province'
+    postcode: 'Postal Code'
+  format: '{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}'
+CC:
+  name: Cocos (Keeling) Islands
+  alpha2: CC
+  alpha3: CCK
+  country_code: '61'
+  dialing_prefix: '0011'
+CD:
+  name: Congo, The Democratic Republic Of The
+  alpha2: CD
+  alpha3: COD
+  country_code: '243'
+  dialing_prefix: '00'
+CF:
+  name: Central African Republic
+  alpha2: CF
+  alpha3: CAF
+  country_code: '236'
+  dialing_prefix: '00'
+CG:
+  name: Congo
+  alpha2: CG
+  alpha3: COG
+  country_code: '242'
+  dialing_prefix: '00'
+CH:
+  name: Switzerland
+  alpha2: CH
+  alpha3: CHE
+  country_code: '41'
+  dialing_prefix: '00'
+CI:
+  name: Côte D'Ivoire
+  alpha2: CI
+  alpha3: CIV
+  country_code: '225'
+  dialing_prefix: '00'
+CK:
+  name: Cook Islands
+  alpha2: CK
+  alpha3: COK
+  country_code: '682'
+  dialing_prefix: '00'
+CL:
+  name: Chile
+  alpha2: CL
+  alpha3: CHL
+  country_code: '56'
+  dialing_prefix: '00'
+CM:
+  name: Cameroon
+  alpha2: CM
+  alpha3: CMR
+  country_code: '237'
+  dialing_prefix: '00'
+CN:
+  name: China
+  alpha2: CN
+  alpha3: CHN
+  country_code: '86'
+  dialing_prefix: '00'
+CO:
+  name: Colombia
+  alpha2: CO
+  alpha3: COL
+  country_code: '57'
+  dialing_prefix: '005'
+CR:
+  name: Costa Rica
+  alpha2: CR
+  alpha3: CRI
+  country_code: '506'
+  dialing_prefix: '00'
+CU:
+  name: Cuba
+  alpha2: CU
+  alpha3: CUB
+  country_code: '53'
+  dialing_prefix: '119'
+CV:
+  name: Cape Verde
+  alpha2: CV
+  alpha3: CPV
+  country_code: '238'
+  dialing_prefix: '00'
+CW:
+  name: Curaçao
+  alpha2: CW
+  alpha3: CUW
+  country_code: '599'
+  dialing_prefix: '00'
+CX:
+  name: Christmas Island
+  alpha2: CX
+  alpha3: CXR
+  country_code: '61'
+  dialing_prefix: '0011'
+CY:
+  name: Cyprus
+  alpha2: CY
+  alpha3: CYP
+  country_code: '357'
+  dialing_prefix: '00'
+CZ:
+  name: Czech Republic
+  alpha2: CZ
+  alpha3: CZE
+  country_code: '420'
+  dialing_prefix: '00'
+DE:
+  name: Germany
+  alpha2: DE
+  alpha3: DEU
+  country_code: '49'
+  dialing_prefix: '00'
+DJ:
+  name: Djibouti
+  alpha2: DJ
+  alpha3: DJI
+  country_code: '253'
+  dialing_prefix: '00'
+DK:
+  name: Denmark
+  alpha2: DK
+  alpha3: DNK
+  country_code: '45'
+  dialing_prefix: '00'
+DM:
+  name: Dominica
+  alpha2: DM
+  alpha3: DMA
+  country_code: '1'
+  dialing_prefix: '011'
+DO:
+  name: Dominican Republic
+  alpha2: DO
+  alpha3: DOM
+  country_code: '1'
+  dialing_prefix: '011'
+DZ:
+  name: Algeria
+  alpha2: DZ
+  alpha3: DZA
+  country_code: '213'
+  dialing_prefix: '00'
+EC:
+  name: Ecuador
+  alpha2: EC
+  alpha3: ECU
+  country_code: '593'
+  dialing_prefix: '00'
+EE:
+  name: Estonia
+  alpha2: EE
+  alpha3: EST
+  country_code: '372'
+  dialing_prefix: '00'
+EG:
+  name: Egypt
+  alpha2: EG
+  alpha3: EGY
+  country_code: '20'
+  dialing_prefix: '00'
+EH:
+  name: Western Sahara
+  alpha2: EH
+  alpha3: ESH
+  country_code: '212'
+  dialing_prefix: ''
+ER:
+  name: Eritrea
+  alpha2: ER
+  alpha3: ERI
+  country_code: '291'
+  dialing_prefix: '00'
+ES:
+  name: Spain
+  alpha2: ES
+  alpha3: ESP
+  country_code: '34'
+  dialing_prefix: '00'
+ET:
+  name: Ethiopia
+  alpha2: ET
+  alpha3: ETH
+  country_code: '251'
+  dialing_prefix: '00'
+FI:
+  name: Finland
+  alpha2: FI
+  alpha3: FIN
+  country_code: '358'
+  dialing_prefix: '00'
+FJ:
+  name: Fiji
+  alpha2: FJ
+  alpha3: FJI
+  country_code: '679'
+  dialing_prefix: '00'
+FK:
+  name: Falkland Islands (Malvinas)
+  alpha2: FK
+  alpha3: FLK
+  country_code: '500'
+  dialing_prefix: '00'
+FM:
+  name: Micronesia, Federated States Of
+  alpha2: FM
+  alpha3: FSM
+  country_code: '691'
+  dialing_prefix: '011'
+FO:
+  name: Faroe Islands
+  alpha2: FO
+  alpha3: FRO
+  country_code: '298'
+  dialing_prefix: '00'
+FR:
+  name: France
+  alpha2: FR
+  alpha3: FRA
+  country_code: '33'
+  dialing_prefix: '00'
+GA:
+  name: Gabon
+  alpha2: GA
+  alpha3: GAB
+  country_code: '241'
+  dialing_prefix: '00'
+GB:
+  name: United Kingdom
+  alpha2: GB
+  alpha3: GBR
+  country_code: '44'
+  dialing_prefix: '00'
+  fields:
+    locality: 'Town'
+    city: 'Postal Town'
+    postcode: 'Post Code'
+  format: '{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}'
+GD:
+  name: Grenada
+  alpha2: GD
+  alpha3: GRD
+  country_code: '1'
+  dialing_prefix: '011'
+GE:
+  name: Georgia
+  alpha2: GE
+  alpha3: GEO
+  country_code: '995'
+  dialing_prefix: '810'
+GF:
+  name: French Guiana
+  alpha2: GF
+  alpha3: GUF
+  country_code: '594'
+  dialing_prefix: '00'
+GG:
+  name: Guernsey
+  alpha2: GG
+  alpha3: GGY
+  country_code: '44'
+  dialing_prefix: ''
+GH:
+  name: Ghana
+  alpha2: GH
+  alpha3: GHA
+  country_code: '233'
+  dialing_prefix: '00'
+GI:
+  name: Gibraltar
+  alpha2: GI
+  alpha3: GIB
+  country_code: '350'
+  dialing_prefix: '00'
+GL:
+  name: Greenland
+  alpha2: GL
+  alpha3: GRL
+  country_code: '299'
+  dialing_prefix: 009
+GM:
+  name: Gambia
+  alpha2: GM
+  alpha3: GMB
+  country_code: '220'
+  dialing_prefix: '00'
+GN:
+  name: Guinea
+  alpha2: GN
+  alpha3: GIN
+  country_code: '224'
+  dialing_prefix: '00'
+GP:
+  name: Guadeloupe
+  alpha2: GP
+  alpha3: GLP
+  country_code: '590'
+  dialing_prefix: '00'
+GQ:
+  name: Equatorial Guinea
+  alpha2: GQ
+  alpha3: GNQ
+  country_code: '240'
+  dialing_prefix: '00'
+GR:
+  name: Greece
+  alpha2: GR
+  alpha3: GRC
+  country_code: '30'
+  dialing_prefix: '00'
+GS:
+  name: South Georgia and the South Sandwich Islands
+  alpha2: GS
+  alpha3: SGS
+  country_code: '500'
+  dialing_prefix: ''
+GT:
+  name: Guatemala
+  alpha2: GT
+  alpha3: GTM
+  country_code: '502'
+  dialing_prefix: '00'
+GU:
+  name: Guam
+  alpha2: GU
+  alpha3: GUM
+  country_code: '1'
+  dialing_prefix: '011'
+GW:
+  name: Guinea-Bissau
+  alpha2: GW
+  alpha3: GNB
+  country_code: '245'
+  dialing_prefix: '00'
+GY:
+  name: Guyana
+  alpha2: GY
+  alpha3: GUY
+  country_code: '592'
+  dialing_prefix: '00'
+HK:
+  name: Hong Kong
+  alpha2: HK
+  alpha3: HKG
+  country_code: '852'
+  dialing_prefix: '001'
+HM:
+  name: Heard and McDonald Islands
+  alpha2: HM
+  alpha3: HMD
+  country_code: ''
+  dialing_prefix: ''
+HN:
+  name: Honduras
+  alpha2: HN
+  alpha3: HND
+  country_code: '504'
+  dialing_prefix: '00'
+HR:
+  name: Croatia
+  alpha2: HR
+  alpha3: HRV
+  country_code: '385'
+  dialing_prefix: '00'
+HT:
+  name: Haiti
+  alpha2: HT
+  alpha3: HTI
+  country_code: '509'
+  dialing_prefix: '00'
+HU:
+  name: Hungary
+  alpha2: HU
+  alpha3: HUN
+  country_code: '36'
+  dialing_prefix: '00'
+ID:
+  name: Indonesia
+  alpha2: ID
+  alpha3: IDN
+  country_code: '62'
+  dialing_prefix: '001'
+IE:
+  name: Ireland
+  alpha2: IE
+  alpha3: IRL
+  country_code: '353'
+  dialing_prefix: '00'
+IL:
+  name: Israel
+  alpha2: IL
+  alpha3: ISR
+  country_code: '972'
+  dialing_prefix: '00'
+IM:
+  name: Isle of Man
+  alpha2: IM
+  alpha3: IMN
+  country_code: '44'
+  dialing_prefix: ''
+IN:
+  name: India
+  alpha2: IN
+  alpha3: IND
+  country_code: '91'
+  dialing_prefix: '00'
+IO:
+  name: British Indian Ocean Territory
+  alpha2: IO
+  alpha3: IOT
+  country_code: '246'
+  dialing_prefix: ''
+IQ:
+  name: Iraq
+  alpha2: IQ
+  alpha3: IRQ
+  country_code: '964'
+  dialing_prefix: '00'
+IR:
+  name: Iran, Islamic Republic Of
+  alpha2: IR
+  alpha3: IRN
+  country_code: '98'
+  dialing_prefix: '00'
+IS:
+  name: Iceland
+  alpha2: IS
+  alpha3: ISL
+  country_code: '354'
+  dialing_prefix: '00'
+IT:
+  name: Italy
+  alpha2: IT
+  alpha3: ITA
+  country_code: '39'
+  dialing_prefix: '00'
+JE:
+  name: Jersey
+  alpha2: JE
+  alpha3: JEY
+  country_code: '44'
+  dialing_prefix: ''
+JM:
+  name: Jamaica
+  alpha2: JM
+  alpha3: JAM
+  country_code: '1'
+  dialing_prefix: '011'
+JO:
+  name: Jordan
+  alpha2: JO
+  alpha3: JOR
+  country_code: '962'
+  dialing_prefix: '00'
+JP:
+  name: Japan
+  alpha2: JP
+  alpha3: JPN
+  country_code: '81'
+  dialing_prefix: '010'
+KE:
+  name: Kenya
+  alpha2: KE
+  alpha3: KEN
+  country_code: '254'
+  dialing_prefix: '000'
+KG:
+  name: Kyrgyzstan
+  alpha2: KG
+  alpha3: KGZ
+  country_code: '996'
+  dialing_prefix: '00'
+KH:
+  name: Cambodia
+  alpha2: KH
+  alpha3: KHM
+  country_code: '855'
+  dialing_prefix: '00'
+KI:
+  name: Kiribati
+  alpha2: KI
+  alpha3: KIR
+  country_code: '686'
+  dialing_prefix: '00'
+KM:
+  name: Comoros
+  alpha2: KM
+  alpha3: COM
+  country_code: '269'
+  dialing_prefix: '00'
+KN:
+  name: Saint Kitts And Nevis
+  alpha2: KN
+  alpha3: KNA
+  country_code: '1'
+  dialing_prefix: '011'
+KP:
+  name: Korea, Democratic People's Republic Of
+  alpha2: KP
+  alpha3: PRK
+  country_code: '850'
+  dialing_prefix: '00'
+KR:
+  name: Korea, Republic of
+  alpha2: KR
+  alpha3: KOR
+  country_code: '82'
+  dialing_prefix: '001'
+KW:
+  name: Kuwait
+  alpha2: KW
+  alpha3: KWT
+  country_code: '965'
+  dialing_prefix: '00'
+KY:
+  name: Cayman Islands
+  alpha2: KY
+  alpha3: CYM
+  country_code: '1'
+  dialing_prefix: '011'
+KZ:
+  name: Kazakhstan
+  alpha2: KZ
+  alpha3: KAZ
+  country_code: '7'
+  dialing_prefix: '810'
+LA:
+  name: Lao People's Democratic Republic
+  alpha2: LA
+  alpha3: LAO
+  country_code: '856'
+  dialing_prefix: '00'
+LB:
+  name: Lebanon
+  alpha2: LB
+  alpha3: LBN
+  country_code: '961'
+  dialing_prefix: '00'
+LC:
+  name: Saint Lucia
+  alpha2: LC
+  alpha3: LCA
+  country_code: '1'
+  dialing_prefix: '011'
+LI:
+  name: Liechtenstein
+  alpha2: LI
+  alpha3: LIE
+  country_code: '423'
+  dialing_prefix: '00'
+LK:
+  name: Sri Lanka
+  alpha2: LK
+  alpha3: LKA
+  country_code: '94'
+  dialing_prefix: '00'
+LR:
+  name: Liberia
+  alpha2: LR
+  alpha3: LBR
+  country_code: '231'
+  dialing_prefix: '00'
+LS:
+  name: Lesotho
+  alpha2: LS
+  alpha3: LSO
+  country_code: '266'
+  dialing_prefix: '00'
+LT:
+  name: Lithuania
+  alpha2: LT
+  alpha3: LTU
+  country_code: '370'
+  dialing_prefix: '00'
+LU:
+  name: Luxembourg
+  alpha2: LU
+  alpha3: LUX
+  country_code: '352'
+  dialing_prefix: '00'
+LV:
+  name: Latvia
+  alpha2: LV
+  alpha3: LVA
+  country_code: '371'
+  dialing_prefix: '00'
+LY:
+  name: Libya
+  alpha2: LY
+  alpha3: LBY
+  country_code: '218'
+  dialing_prefix: '00'
+MA:
+  name: Morocco
+  alpha2: MA
+  alpha3: MAR
+  country_code: '212'
+  dialing_prefix: '00'
+MC:
+  name: Monaco
+  alpha2: MC
+  alpha3: MCO
+  country_code: '377'
+  dialing_prefix: '00'
+MD:
+  name: Moldova, Republic of
+  alpha2: MD
+  alpha3: MDA
+  country_code: '373'
+  dialing_prefix: '00'
+ME:
+  name: Montenegro
+  alpha2: ME
+  alpha3: MNE
+  country_code: '382'
+  dialing_prefix: '99'
+MF:
+  name: Saint Martin
+  alpha2: MF
+  alpha3: MAF
+  country_code: '590'
+  dialing_prefix: ''
+MG:
+  name: Madagascar
+  alpha2: MG
+  alpha3: MDG
+  country_code: '261'
+  dialing_prefix: '00'
+MH:
+  name: Marshall Islands
+  alpha2: MH
+  alpha3: MHL
+  country_code: '692'
+  dialing_prefix: '00'
+MK:
+  name: Macedonia, the Former Yugoslav Republic Of
+  alpha2: MK
+  alpha3: MKD
+  country_code: '389'
+  dialing_prefix: '00'
+ML:
+  name: Mali
+  alpha2: ML
+  alpha3: MLI
+  country_code: '223'
+  dialing_prefix: '00'
+MM:
+  name: Myanmar
+  alpha2: MM
+  alpha3: MMR
+  country_code: '95'
+  dialing_prefix: '00'
+MN:
+  name: Mongolia
+  alpha2: MN
+  alpha3: MNG
+  country_code: '976'
+  dialing_prefix: '001'
+MO:
+  name: Macao
+  alpha2: MO
+  alpha3: MAC
+  country_code: '853'
+  dialing_prefix: '00'
+MP:
+  name: Northern Mariana Islands
+  alpha2: MP
+  alpha3: MNP
+  country_code: '1'
+  dialing_prefix: '011'
+MQ:
+  name: Martinique
+  alpha2: MQ
+  alpha3: MTQ
+  country_code: '596'
+  dialing_prefix: '00'
+MR:
+  name: Mauritania
+  alpha2: MR
+  alpha3: MRT
+  country_code: '222'
+  dialing_prefix: '00'
+MS:
+  name: Montserrat
+  alpha2: MS
+  alpha3: MSR
+  country_code: '1'
+  dialing_prefix: '011'
+MT:
+  name: Malta
+  alpha2: MT
+  alpha3: MLT
+  country_code: '356'
+  dialing_prefix: '00'
+MU:
+  name: Mauritius
+  alpha2: MU
+  alpha3: MUS
+  country_code: '230'
+  dialing_prefix: '020'
+MV:
+  name: Maldives
+  alpha2: MV
+  alpha3: MDV
+  country_code: '960'
+  dialing_prefix: '00'
+MW:
+  name: Malawi
+  alpha2: MW
+  alpha3: MWI
+  country_code: '265'
+  dialing_prefix: '00'
+MX:
+  name: Mexico
+  alpha2: MX
+  alpha3: MEX
+  country_code: '52'
+  dialing_prefix: '00'
+MY:
+  name: Malaysia
+  alpha2: MY
+  alpha3: MYS
+  country_code: '60'
+  dialing_prefix: '00'
+MZ:
+  name: Mozambique
+  alpha2: MZ
+  alpha3: MOZ
+  country_code: '258'
+  dialing_prefix: '00'
+NA:
+  name: Namibia
+  alpha2: NA
+  alpha3: NAM
+  country_code: '264'
+  dialing_prefix: '00'
+NC:
+  name: New Caledonia
+  alpha2: NC
+  alpha3: NCL
+  country_code: '687'
+  dialing_prefix: '00'
+NE:
+  name: Niger
+  alpha2: NE
+  alpha3: NER
+  country_code: '227'
+  dialing_prefix: '00'
+NF:
+  name: Norfolk Island
+  alpha2: NF
+  alpha3: NFK
+  country_code: '672'
+  dialing_prefix: '00'
+NG:
+  name: Nigeria
+  alpha2: NG
+  alpha3: NGA
+  country_code: '234'
+  dialing_prefix: 009
+NI:
+  name: Nicaragua
+  alpha2: NI
+  alpha3: NIC
+  country_code: '505'
+  dialing_prefix: '00'
+NL:
+  name: Netherlands
+  alpha2: NL
+  alpha3: NLD
+  country_code: '31'
+  dialing_prefix: '00'
+'NO':
+  name: Norway
+  alpha2: 'NO'
+  alpha3: NOR
+  country_code: '47'
+  dialing_prefix: '00'
+NP:
+  name: Nepal
+  alpha2: NP
+  alpha3: NPL
+  country_code: '977'
+  dialing_prefix: '00'
+NR:
+  name: Nauru
+  alpha2: NR
+  alpha3: NRU
+  country_code: '674'
+  dialing_prefix: '00'
+NU:
+  name: Niue
+  alpha2: NU
+  alpha3: NIU
+  country_code: '683'
+  dialing_prefix: '00'
+NZ:
+  name: New Zealand
+  alpha2: NZ
+  alpha3: NZL
+  country_code: '64'
+  dialing_prefix: '00'
+  fields:
+    locality: 'Suburb'
+    city: 'City'
+    postcode: 'Postal code'
+  format: '{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}'
+OM:
+  name: Oman
+  alpha2: OM
+  alpha3: OMN
+  country_code: '968'
+  dialing_prefix: '00'
+PA:
+  name: Panama
+  alpha2: PA
+  alpha3: PAN
+  country_code: '507'
+  dialing_prefix: '00'
+PE:
+  name: Peru
+  alpha2: PE
+  alpha3: PER
+  country_code: '51'
+  dialing_prefix: '00'
+PF:
+  name: French Polynesia
+  alpha2: PF
+  alpha3: PYF
+  country_code: '689'
+  dialing_prefix: '00'
+PG:
+  name: Papua New Guinea
+  alpha2: PG
+  alpha3: PNG
+  country_code: '675'
+  dialing_prefix: '05'
+PH:
+  name: Philippines
+  alpha2: PH
+  alpha3: PHL
+  country_code: '63'
+  dialing_prefix: '00'
+PK:
+  name: Pakistan
+  alpha2: PK
+  alpha3: PAK
+  country_code: '92'
+  dialing_prefix: '00'
+PL:
+  name: Poland
+  alpha2: PL
+  alpha3: POL
+  country_code: '48'
+  dialing_prefix: '00'
+PM:
+  name: Saint Pierre And Miquelon
+  alpha2: PM
+  alpha3: SPM
+  country_code: '508'
+  dialing_prefix: '00'
+PN:
+  name: Pitcairn
+  alpha2: PN
+  alpha3: PCN
+  country_code: ''
+  dialing_prefix: '00'
+PR:
+  name: Puerto Rico
+  alpha2: PR
+  alpha3: PRI
+  country_code: '1'
+  dialing_prefix: '011'
+PS:
+  name: Palestinian Territory, Occupied
+  alpha2: PS
+  alpha3: PSE
+  country_code: '970'
+  dialing_prefix: '00'
+PT:
+  name: Portugal
+  alpha2: PT
+  alpha3: PRT
+  country_code: '351'
+  dialing_prefix: '00'
+PW:
+  name: Palau
+  alpha2: PW
+  alpha3: PLW
+  country_code: '680'
+  dialing_prefix: '00'
+PY:
+  name: Paraguay
+  alpha2: PY
+  alpha3: PRY
+  country_code: '595'
+  dialing_prefix: '002'
+QA:
+  name: Qatar
+  alpha2: QA
+  alpha3: QAT
+  country_code: '974'
+  dialing_prefix: '00'
+RE:
+  name: Réunion
+  alpha2: RE
+  alpha3: REU
+  country_code: '262'
+  dialing_prefix: '00'
+RO:
+  name: Romania
+  alpha2: RO
+  alpha3: ROU
+  country_code: '40'
+  dialing_prefix: '00'
+RS:
+  name: Serbia
+  alpha2: RS
+  alpha3: SRB
+  country_code: '381'
+  dialing_prefix: '99'
+RU:
+  name: Russian Federation
+  alpha2: RU
+  alpha3: RUS
+  country_code: '7'
+  dialing_prefix: '810'
+RW:
+  name: Rwanda
+  alpha2: RW
+  alpha3: RWA
+  country_code: '250'
+  dialing_prefix: '00'
+SA:
+  name: Saudi Arabia
+  alpha2: SA
+  alpha3: SAU
+  country_code: '966'
+  dialing_prefix: '00'
+SB:
+  name: Solomon Islands
+  alpha2: SB
+  alpha3: SLB
+  country_code: '677'
+  dialing_prefix: '00'
+SC:
+  name: Seychelles
+  alpha2: SC
+  alpha3: SYC
+  country_code: '248'
+  dialing_prefix: '00'
+SD:
+  name: Sudan
+  alpha2: SD
+  alpha3: SDN
+  country_code: '249'
+  dialing_prefix: '00'
+SE:
+  name: Sweden
+  alpha2: SE
+  alpha3: SWE
+  country_code: '46'
+  dialing_prefix: '00'
+SG:
+  name: Singapore
+  alpha2: SG
+  alpha3: SGP
+  country_code: '65'
+  dialing_prefix: '001'
+SH:
+  name: Saint Helena
+  alpha2: SH
+  alpha3: SHN
+  country_code: '290'
+  dialing_prefix: '00'
+SI:
+  name: Slovenia
+  alpha2: SI
+  alpha3: SVN
+  country_code: '386'
+  dialing_prefix: '00'
+SJ:
+  name: Svalbard And Jan Mayen
+  alpha2: SJ
+  alpha3: SJM
+  country_code: '47'
+  dialing_prefix: '00'
+SK:
+  name: Slovakia
+  alpha2: SK
+  alpha3: SVK
+  country_code: '421'
+  dialing_prefix: '00'
+SL:
+  name: Sierra Leone
+  alpha2: SL
+  alpha3: SLE
+  country_code: '232'
+  dialing_prefix: '00'
+SM:
+  name: San Marino
+  alpha2: SM
+  alpha3: SMR
+  country_code: '378'
+  dialing_prefix: '00'
+SN:
+  name: Senegal
+  alpha2: SN
+  alpha3: SEN
+  country_code: '221'
+  dialing_prefix: '00'
+SO:
+  name: Somalia
+  alpha2: SO
+  alpha3: SOM
+  country_code: '252'
+  dialing_prefix: '00'
+SR:
+  name: Suriname
+  alpha2: SR
+  alpha3: SUR
+  country_code: '597'
+  dialing_prefix: '00'
+SS:
+  name: South Sudan
+  alpha2: SS
+  alpha3: SSD
+  country_code: '211'
+  dialing_prefix: '0'
+ST:
+  name: Sao Tome and Principe
+  alpha2: ST
+  alpha3: STP
+  country_code: '239'
+  dialing_prefix: '00'
+SV:
+  name: El Salvador
+  alpha2: SV
+  alpha3: SLV
+  country_code: '503'
+  dialing_prefix: '00'
+SX:
+  name: Sint Maarten
+  alpha2: SX
+  alpha3: SXM
+  country_code: '1'
+  dialing_prefix: '011'
+SY:
+  name: Syrian Arab Republic
+  alpha2: SY
+  alpha3: SYR
+  country_code: '963'
+  dialing_prefix: '00'
+SZ:
+  name: Swaziland
+  alpha2: SZ
+  alpha3: SWZ
+  country_code: '268'
+  dialing_prefix: '00'
+TC:
+  name: Turks and Caicos Islands
+  alpha2: TC
+  alpha3: TCA
+  country_code: '1'
+  dialing_prefix: '011'
+TD:
+  name: Chad
+  alpha2: TD
+  alpha3: TCD
+  country_code: '235'
+  dialing_prefix: '15'
+TF:
+  name: French Southern Territories
+  alpha2: TF
+  alpha3: ATF
+  country_code: ''
+  dialing_prefix: ''
+TG:
+  name: Togo
+  alpha2: TG
+  alpha3: TGO
+  country_code: '228'
+  dialing_prefix: '00'
+TH:
+  name: Thailand
+  alpha2: TH
+  alpha3: THA
+  country_code: '66'
+  dialing_prefix: '001'
+TJ:
+  name: Tajikistan
+  alpha2: TJ
+  alpha3: TJK
+  country_code: '992'
+  dialing_prefix: '810'
+TK:
+  name: Tokelau
+  alpha2: TK
+  alpha3: TKL
+  country_code: '690'
+  dialing_prefix: '00'
+TL:
+  name: Timor-Leste
+  alpha2: TL
+  alpha3: TLS
+  country_code: '670'
+  dialing_prefix: None
+TM:
+  name: Turkmenistan
+  alpha2: TM
+  alpha3: TKM
+  country_code: '993'
+  dialing_prefix: '810'
+TN:
+  name: Tunisia
+  alpha2: TN
+  alpha3: TUN
+  country_code: '216'
+  dialing_prefix: '00'
+TO:
+  name: Tonga
+  alpha2: TO
+  alpha3: TON
+  country_code: '676'
+  dialing_prefix: '00'
+TR:
+  name: Turkey
+  alpha2: TR
+  alpha3: TUR
+  country_code: '90'
+  dialing_prefix: '00'
+TT:
+  name: Trinidad and Tobago
+  alpha2: TT
+  alpha3: TTO
+  country_code: '1'
+  dialing_prefix: '011'
+TV:
+  name: Tuvalu
+  alpha2: TV
+  alpha3: TUV
+  country_code: '688'
+  dialing_prefix: '00'
+TW:
+  name: Taiwan, Republic Of China
+  alpha2: TW
+  alpha3: TWN
+  country_code: '886'
+  dialing_prefix: '002'
+TZ:
+  name: Tanzania, United Republic of
+  alpha2: TZ
+  alpha3: TZA
+  country_code: '255'
+  dialing_prefix: '000'
+UA:
+  name: Ukraine
+  alpha2: UA
+  alpha3: UKR
+  country_code: '380'
+  dialing_prefix: '810'
+UG:
+  name: Uganda
+  alpha2: UG
+  alpha3: UGA
+  country_code: '256'
+  dialing_prefix: '000'
+UM:
+  name: United States Minor Outlying Islands
+  alpha2: UM
+  alpha3: UMI
+  country_code: '1'
+  dialing_prefix: '011'
+US:
+  name: United States
+  alpha2: US
+  alpha3: USA
+  country_code: '1'
+  dialing_prefix: '011'
+  fields:
+    city: 'City'
+    region: 'State'
+    postcode: 'Zip Code'
+  format: '{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}'
+UY:
+  name: Uruguay
+  alpha2: UY
+  alpha3: URY
+  country_code: '598'
+  dialing_prefix: '00'
+UZ:
+  name: Uzbekistan
+  alpha2: UZ
+  alpha3: UZB
+  country_code: '998'
+  dialing_prefix: '810'
+VA:
+  name: Holy See (Vatican City State)
+  alpha2: VA
+  alpha3: VAT
+  country_code: '39'
+  dialing_prefix: '00'
+VC:
+  name: Saint Vincent And The Grenedines
+  alpha2: VC
+  alpha3: VCT
+  country_code: '1'
+  dialing_prefix: '011'
+VE:
+  name: Venezuela, Bolivarian Republic of
+  alpha2: VE
+  alpha3: VEN
+  country_code: '58'
+  dialing_prefix: '00'
+VG:
+  name: Virgin Islands, British
+  alpha2: VG
+  alpha3: VGB
+  country_code: '1'
+  dialing_prefix: '011'
+VI:
+  name: Virgin Islands, U.S.
+  alpha2: VI
+  alpha3: VIR
+  country_code: '1'
+  dialing_prefix: '011'
+VN:
+  name: Vietnam
+  alpha2: VN
+  alpha3: VNM
+  country_code: '84'
+  dialing_prefix: '00'
+VU:
+  name: Vanuatu
+  alpha2: VU
+  alpha3: VUT
+  country_code: '678'
+  dialing_prefix: '00'
+WF:
+  name: Wallis and Futuna
+  alpha2: WF
+  alpha3: WLF
+  country_code: '681'
+  dialing_prefix: '19'
+WS:
+  name: Samoa
+  alpha2: WS
+  alpha3: WSM
+  country_code: '685'
+  dialing_prefix: '00'
+YE:
+  name: Yemen
+  alpha2: YE
+  alpha3: YEM
+  country_code: '967'
+  dialing_prefix: '00'
+YT:
+  name: Mayotte
+  alpha2: YT
+  alpha3: MYT
+  country_code: '262'
+  dialing_prefix: '00'
+ZA:
+  name: South Africa
+  alpha2: ZA
+  alpha3: ZAF
+  country_code: '27'
+  dialing_prefix: 09
+ZM:
+  name: Zambia
+  alpha2: ZM
+  alpha3: ZMB
+  country_code: '260'
+  dialing_prefix: '00'
+ZW:
+  name: Zimbabwe
+  alpha2: ZW
+  alpha3: ZWE
+  country_code: '263'
+  dialing_prefix: '00'
