@@ -34,7 +34,7 @@ module Worldly
     end
 
     def fields
-      symbolize_keys(@data['fields']) || {city: 'City'}
+      symbolize_keys(@data['fields'] || {city: 'City'})
     end
 
     def has_field?(f)
