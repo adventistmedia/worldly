@@ -41,6 +41,14 @@ module Worldly
       fields.key?(f.to_s)
     end
 
+    def required_fields
+      fields.keys - optional_fields
+    end
+
+    def optional_fields
+      @data['optional_fields'] || []
+    end
+
     def all_fields(exclude_country=false)
       af = {
         'address1' => 'Address 1',
@@ -54,6 +62,10 @@ module Worldly
       @regions_exist ||= File.exist?(region_file_path)
     end
 
+    def use_regions?
+      has_field?('region') && regions?
+    end
+
     def regions
       @regions ||= (regions? ? YAML.load_file(region_file_path) : {})
     end
@@ -61,9 +73,13 @@ module Worldly
     class << self
 
       def new(code)
-        if Data.keys.include?(code.to_s.upcase)
+        if self.exists?(code)
           super
         end
+      end
+
+      def exists?(code)
+        Data.key?(code.to_s.upcase)
       end
 
       def all

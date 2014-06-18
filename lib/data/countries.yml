@@ -1081,10 +1081,12 @@ NZ:
   alpha3: NZL
   country_code: '64'
   dialing_prefix: '00'
+  optional_fields:
+    - locality
   fields:
-    locality: 'Suburb'
-    city: 'City'
-    postcode: 'Postal code'
+    locality: Suburb
+    city: City
+    postcode: Postal code
   format: '{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}'
 OM:
   name: Oman
