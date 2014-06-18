@@ -7,7 +7,7 @@ AD:
   dialing_prefix: '00'
   fields:
     city: 'City'
-    postcode: 'Postal Code'
+    postcode: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AE:
   name: United Arab Emirates
@@ -26,7 +26,7 @@ AF:
   dialing_prefix: '00'
   fields:
     city: 'City'
-    postcode: 'Postal Code'
+    postcode: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{city}}\n{{postcode}}\n{{country}}'
 AG:
   name: Antigua and Barbuda
@@ -54,7 +54,7 @@ AM:
   dialing_prefix: '00'
   fields:
     city: 'City'
-    postcode: 'Postal Code'
+    postcode: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AN:
   name: Netherlands Antilles
@@ -82,7 +82,7 @@ AR:
   dialing_prefix: '00'
   fields:
     city: 'City'
-    postcode: 'Postal Code'
+    postcode: 'Post Code'
     region: 'Province'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AS:
@@ -102,7 +102,7 @@ AT:
   dialing_prefix: '00'
   fields:
     city: 'City'
-    postcode: 'Postal Code'
+    postcode: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 AU:
   name: Australia
@@ -113,7 +113,7 @@ AU:
   fields:
     city: 'City'
     region: 'State'
-    postcode: 'Postal Code'
+    postcode: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}'
 AW:
   name: Aruba
@@ -135,7 +135,7 @@ AZ:
   dialing_prefix: '810'
   fields:
     city: 'City'
-    postcode: 'Postal Code'
+    postcode: 'Post Code'
   format: '{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}'
 BA:
   name: Bosnia and Herzegovina
@@ -685,6 +685,10 @@ IN:
   alpha3: IND
   country_code: '91'
   dialing_prefix: '00'
+  fields:
+    city: 'City'
+    postcode: 'PIN Code'
+  format: '{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{country}}'
 IO:
   name: British Indian Ocean Territory
   alpha2: IO
@@ -1086,7 +1090,7 @@ NZ:
   fields:
     locality: Suburb
     city: City
-    postcode: Postal code
+    postcode: Post Code
   format: '{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}'
 OM:
   name: Oman
