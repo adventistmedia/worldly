@@ -57,6 +57,10 @@ module Worldly
       @has_regions ||= File.exist?(region_file_path)
     end
 
+    def has_regions?(f)
+      f == :region && regions?
+    end
+
     def regions
       @regions ||= (regions? ? YAML.load_file(region_file_path) : {})
     end
