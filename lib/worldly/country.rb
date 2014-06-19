@@ -29,12 +29,30 @@ module Worldly
       @data[:country_code]
     end
 
-    def dialing_prefix
-      @data[:dialing_prefix]
+    def address_format
+      @data[:address_format] || "{{address1}}\n{{address2}}\n{{city}}\n{{country}}"
     end
 
-    def format
-      @data[:format] || "{{address1}}\n{{address2}}\n{{city}}\n{{country}}"
+    def all_fields
+      [:address1, :address2, :country] + fields.keys
+    end
+
+    # Generate an address for printing based on the countries address format.
+    # attributes = {address1: '12 hey St', address2: '', locality:'Homeville', postcode: 'AHZ 312' }
+    # sending country = 'AU'. If added the country name will be excluded from address
+    def to_print(attributes, sending_country=nil)
+      # don't add country if sending from country
+      unless sending_country.to_s.upcase == @code
+        attributes.merge!({ country: official_name})
+      end
+      print = address_format.dup
+      all_fields.each do |f|
+        print.gsub!("{{#{f}}}", format_values(f, attributes[f].to_s) )
+      end
+      print.squeeze(' ')
+      .gsub(/\s+\n|\n\s+|\s+\n\s+/, "\n")
+      .squeeze("\n")
+      .strip
     end
 
     def has_field?(f)
@@ -106,21 +124,28 @@ module Worldly
         result
       }
     end
-
-    def format_value(value)
-      formatted_field = value.to_s.strip
-      f.each do |f|
-        case f.split(',').first
+    # Format a value e.g :region, 'NY'
+    # apply any formatting rules
+    #  - if rule fullname included change the region to it's full name - New York
+    def format_values(field, value)
+      value.to_s.strip!
+      if !fields.key?(field) || fields[field][:format].nil?
+        return value
+      end
+      rules = fields[field][:format].dup
+      # use fullname rather than abbreviated
+      # fullname rule must be applied first!
+      if rules.delete('fullname') && regions[value]
+        value = regions[value]
+      end
+      # formatting
+      rules.each do |rule|
+        case rule
         when 'upcase'
-          formatted_field.upcase!
-        when 'split'
-          m, separator, indexes = f.split(',')
-          indexes.each do |index|
-            formatted_field.insert(separator, index)
-          end
+          value.upcase!
         end
       end
-      formatted_field
+      value
     end
 
     # all fields are required by default unless otherwise stated
