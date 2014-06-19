@@ -217,6 +217,16 @@ BR:
   alpha2: BR
   alpha3: BRA
   country_code: '55'
+  fields:
+    locality:
+      name: Suburb
+    city:
+      label: City
+    region:
+      label: State
+    postcode:
+      label: 'Post Code'
+  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{region}}\n{{postcode}}\n{{country}}"
 BS:
   name: Bahamas
   alpha2: BS
@@ -271,7 +281,7 @@ CA:
       label: 'Postal Code'
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{region}}\n{{country}}"
 CC:
   name: Cocos (Keeling) Islands
   alpha2: CC
@@ -322,6 +332,20 @@ CN:
   alpha2: CN
   alpha3: CHN
   country_code: '86'
+  fields:
+    locality:
+      label: Suburb
+      required: false
+    city:
+      label: City
+      required: false
+    postcode:
+      label: 'Post Code'
+      format:
+        - upcase
+    region:
+      label: Province
+  address_format: "{{address1}}\n{{address2}}\n{{locality}} {{city}}\n{{postcode}} {{region}}\n{{country}}"
 CO:
   name: Colombia
   alpha2: CO
@@ -555,6 +579,16 @@ GU:
   alpha2: GU
   alpha3: GUM
   country_code: '1'
+  fields:
+    city:
+      label: City
+    postcode:
+      label: 'Zip Code'
+    region:
+      label: State
+      format:
+        - upcase
+  address_format: "{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
 GW:
   name: Guinea-Bissau
   alpha2: GW
@@ -823,6 +857,15 @@ MK:
   alpha2: MK
   alpha3: MKD
   country_code: '389'
+  fields:
+    locality:
+      label: Suburb
+      required: false
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
+  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{postcode}} {{city}}\n{{country}}"
 ML:
   name: Mali
   alpha2: ML
@@ -1127,16 +1170,13 @@ SE:
   address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
 SG:
   name: Singapore
-  official_name: Republic Of Singapore
   alpha2: SG
   alpha3: SGP
   country_code: '65'
   fields:
     postcode:
       label: 'Post Code'
-    region:
-      label: 'City-State'
-  address_format: "{{address1}}\n{{address2}}\n{{region}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{country}} {{postcode}}\n{{country}}"
 SH:
   name: Saint Helena
   alpha2: SH
@@ -1377,6 +1417,12 @@ WS:
   alpha2: WS
   alpha3: WSM
   country_code: '685'
+  fields:
+    city:
+      label: City
+      format:
+        - upcase
+  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{region}}\n{{country}}"
 YE:
   name: Yemen
   alpha2: YE
