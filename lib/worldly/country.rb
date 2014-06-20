@@ -107,7 +107,7 @@ module Worldly
     private
 
     def region_file_path
-      File.join(File.dirname(__FILE__), '..', "data/regions/#{@code}.yaml")
+      File.join(File.dirname(__FILE__), '..', "data/regions/#{@code}.yml")
     end
 
     def symbolize_keys(hash)

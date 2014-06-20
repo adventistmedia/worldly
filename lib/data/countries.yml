@@ -634,6 +634,15 @@ ID:
   alpha2: ID
   alpha3: IDN
   country_code: '62'
+  fields:
+    locality:
+      label: Suburb
+      required: false
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
+  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}"
 IE:
   name: Ireland
   alpha2: IE
