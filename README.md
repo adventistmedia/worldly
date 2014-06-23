@@ -50,11 +50,11 @@ Worldly uses the address fields locality, city, region & postcode. Address1, Add
 ```
 Each field notes the following details:
 
-1. Label: what field is called in the specific country. For example a postcode is called "Post Code" in Australia, "PIN code" in India and "Zip Code" in the US
+1. Label: The fields name in the specific country. For example a postcode is called "Post Code" in Australia, "PIN code" in India and "Zip Code" in the US
 2. Required: Whether the field is required
 3. Format: format is an array or rules applied when displaying the address. Current address rules include
   * upcase: Change the field to uppercase
-  * code: primarily used with regions. By default the regions full name is used when displaying otherwise the region code. For example 'NSW' is used rather than New South Wales for the Australia state.
+  * code: Used be regions. By default the regions full name is used when displaying otherwise the region code. For example 'NSW' is used rather than New South Wales for the Australia state.
 
 Field Methods
 ```
@@ -70,7 +70,7 @@ To retrieve all fields including address1, address2 & country use
 
 Regions (State/Province) are provided for some countries in seperate YAML files
 
-Check if regions exist for country
+Check if a regions exist for country
 ```
   country.regions? => true
 ```
@@ -92,7 +92,7 @@ You can return the address formatting with liquid tags
 
 To have the address formatted correctly for mailing use to_print(attributes, sending_country=nil)
 * attributes: takes a hash of field values. If a required field is not provided it will simple not display in the address.
-* sending_country: a country code - if provided and the address country matches the sending_country and country field will not be including. This is useful if generating mailing addresses to sent by your home country where country field is not required.
+* sending_country: a country code - if provided and the address country matches the sending_country the country field will not be shown. This is useful if generating mailing addresses to be sent by your home country where country field is not required.
 
 ```
   country.to_print({address1: '12 hey St', address2: '', postcode: '2000', city: 'Newtown', state:'NSW'})
@@ -102,9 +102,9 @@ To have the address formatted correctly for mailing use to_print(attributes, sen
 ```
 ## Contributing
 
-If you find a country with mission regions, or a country missing address formatting information you can create a bug mentioning the correct fields
+If you find a country with mission regions, or a country missing address formatting information you can create a issue ticket with corrections.
 
-O
+Thanks bro!
 
 1. Fork it ( http://github.com/amnwebmaster/worldly/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
