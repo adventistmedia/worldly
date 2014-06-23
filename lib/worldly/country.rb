@@ -13,10 +13,6 @@ module Worldly
       @data[:name]
     end
 
-    def official_name
-      @data[:official_name] || name
-    end
-
     def alpha2
       @data[:alpha2]
     end
@@ -43,14 +39,14 @@ module Worldly
     def to_print(attributes, sending_country=nil)
       # don't add country if sending from country
       unless sending_country.to_s.upcase == @code
-        attributes.merge!({ country: official_name})
+        attributes.merge!({ country: name})
       end
       print = address_format.dup
       all_fields.each do |f|
         print.gsub!("{{#{f}}}", format_values(f, attributes[f].to_s) )
       end
       print.squeeze(' ')
-      .gsub(/\s+\n|\n\s+|\s+\n\s+/, "\n")
+      .gsub(/\A\s+\n|\n\s+|\s+\n\s+\Z/, "\n")
       .squeeze("\n")
       .strip
     end
