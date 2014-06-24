@@ -1,0 +1,8 @@
+= Version 0.1.0 - 2014-06-24
+  * New: Worldly::Country.country_code_options
+  * Improvement: Worldly::Country.all not accepts field attribute
+  * Cleanup: Remove all unverified region data
+  * Improvement: default address_format and fields added.
+
+= Version 0.0.1 - 2014-06-23
+  * Initial Release

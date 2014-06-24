@@ -26,7 +26,7 @@ module Worldly
     end
 
     def address_format
-      @data[:address_format] || "{{address1}}\n{{address2}}\n{{city}}\n{{country}}"
+      @data[:address_format] || "{{address1}}\n{{address2}}\n{{city}}\n{{region} {{postcode}}\n{{country}}"
     end
 
     def all_fields
@@ -91,8 +91,12 @@ module Worldly
         Data.key?(code.to_s.upcase)
       end
 
-      def all
-        Data.map{ |country, data| [data['name'], country] }.sort
+      def all(field='name')
+        Data.map{ |country, data| [data[field.to_s], country] }.sort{|x,y| x[0] <=> y[0] }
+      end
+
+      def country_code_options
+        Data.map{ |country, data| data['country_code'] }.uniq.reject(&:empty?).sort{|x,y| x <=> y }
       end
 
       def [](code)
@@ -151,7 +155,7 @@ module Worldly
           v[:required] = true unless v.key?(:required)
         end
       else
-        {city: {label:'City', required: true} }
+        {city: {label:'City', required: true}, region: {label: 'Province', required: false}, postcode: {label: 'Post Code', required: false} }
       end
     end
 

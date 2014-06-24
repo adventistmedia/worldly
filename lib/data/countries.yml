@@ -1136,7 +1136,7 @@ RU:
       label: Province
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{region}}\n{{country}}\n{{postcode}}"
+  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{region}}\n{{postcode}}\n{{country}}"
 RW:
   name: Rwanda
   alpha2: RW

@@ -27,23 +27,31 @@ Get all countries:
 ```
   Worldly::Country.all  => [["Afghanistan", "AF"], ["Albania", "AL"], ["Algeria", "DZ"],....]
 ```
+The all method also accepts a field name as a string. By default this is name. Options include: alpha2,alpha3,country_code
+```
+  Worldly::Country.all('alpha3')  => [["ABW", "AW"], ["AFG", "AF"], ["AGO", "AO"],....]
+```
 Check if a country exists?
 ```
   Worldly::Country.exists?('AU')  => true
-```  
+```
+Get a list of all country phone number codes unique and sorted. Note that many countries can use the same code. If you want a full list use Worldly::Country.all('country_code')
+```
+  Worldly::Country.country_code_options => ["1", "20", "211", "212", "213", "216",.....]
+```
 ### Working with a Country
 
 Retrieve a country using it's country code
 ```
   country = Worldly::Country['AU']  => #<Worldly::Country:0x007fa48239ee90 @code="AU", @data={:name=>"Australia", :alpha2=>"AU", :alpha3=>"AUS", :country_code=>"61", :fields=>{:city=>{:label=>"City", :format=>["upcase"]}, :region=>{:label=>"State", :format=>["upcase"]}, :postcode=>{:label=>"Post Code"}}, :address_format=>"{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}"}>
 ```
-```  
+```
   country.name => Australia
   country.code   => AU
   country.alpha2 => AU
   country.alpha3 => AUS
   country.country_code => 61
-```  
+```
 Worldly uses the address fields locality, city, region & postcode. Address1, Address2 and Country are implied and hence not added. A call to country.fields will return the fields not implied that the country address uses.
 ```
   country.fields => {:city=>{:label=>"City", :format=>["upcase"], :required=>true}, :region=>{:label=>"State", :format=>["upcase"], :required=>true}, :postcode=>{:label=>"Post Code", :required=>true}}
