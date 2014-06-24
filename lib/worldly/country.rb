@@ -26,7 +26,7 @@ module Worldly
     end
 
     def address_format
-      @data[:address_format] || "{{address1}}\n{{address2}}\n{{city}}\n{{region} {{postcode}}\n{{country}}"
+      @data[:address_format] || "{{address1}}\n{{address2}}\n{{city}}\n{{region}} {{postcode}}\n{{country}}"
     end
 
     def all_fields

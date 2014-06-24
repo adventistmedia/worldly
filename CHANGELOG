@@ -1,3 +1,6 @@
+= Version 0.1.1 - 2014-06-24
+  * Fix: address format correction
+
 = Version 0.1.0 - 2014-06-24
   * New: Worldly::Country.country_code_options
   * Improvement: Worldly::Country.all not accepts field attribute
