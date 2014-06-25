@@ -307,6 +307,12 @@ CH:
   alpha2: CH
   alpha3: CHE
   country_code: '41'
+  fields:
+    city:
+      label: City
+    postcode:
+      label: 'Postal Code'
+  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
 CI:
   name: Côte D'Ivoire
   alpha2: CI
@@ -431,6 +437,17 @@ EG:
   alpha2: EG
   alpha3: EGY
   country_code: '20'
+  fields:
+    locality:
+      label: District
+      required: false
+    city:
+      label: City
+      format:
+        - upcase
+    postcode:
+      label: 'Post Code'
+  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}"
 EH:
   name: Western Sahara
   alpha2: EH
@@ -648,11 +665,27 @@ IE:
   alpha2: IE
   alpha3: IRL
   country_code: '353'
+  fields:
+    city:
+      label: City
+    region:
+      label: County
+      required: false
+    postcode:
+      label: 'Post Code'
+      required: false
+  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{region}} {{postcode}}\n{{country}}"
 IL:
   name: Israel
   alpha2: IL
   alpha3: ISR
   country_code: '972'
+  fields:
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
+  address_format: "{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{country}}"
 IM:
   name: Isle of Man
   alpha2: IM
@@ -711,6 +744,12 @@ JO:
   alpha2: JO
   alpha3: JOR
   country_code: '962'
+  fields:
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
+  address_format: "{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{country}}"
 JP:
   name: Japan
   alpha2: JP
@@ -1094,6 +1133,15 @@ PT:
   alpha2: PT
   alpha3: PRT
   country_code: '351'
+  fields:
+    locality:
+      label: Village
+      required: false
+    city:
+      label: City
+    postcode:
+      label: 'Post Code'
+  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{postcode}} {{city}}\n{{country}}"
 PW:
   name: Palau
   alpha2: PW
@@ -1447,6 +1495,17 @@ ZA:
   alpha2: ZA
   alpha3: ZAF
   country_code: '27'
+  fields:
+    locality:
+      label: Suburb
+      format:
+        - upcase
+    city:
+      label: City
+    region:
+      label: Province
+      required: false
+  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{region}}\n{postcode}}\n{{country}}"
 ZM:
   name: Zambia
   alpha2: ZM
