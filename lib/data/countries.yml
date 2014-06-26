@@ -447,6 +447,7 @@ EG:
         - upcase
     postcode:
       label: 'Post Code'
+      required: false
   address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}"
 EH:
   name: Western Sahara
