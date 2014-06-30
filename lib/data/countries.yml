@@ -111,7 +111,7 @@ AU:
   country_code: '61'
   fields:
     city:
-      label: City
+      label: 'Suburb/City'
       format:
         - upcase
     region:
