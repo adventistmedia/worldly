@@ -96,7 +96,7 @@ module Worldly
       end
 
       def country_code_options
-        Data.map{ |country, data| data['country_code'] }.uniq.reject(&:empty?).sort{|x,y| x <=> y }
+        Data.map{ |country, data| data['country_code'] }.uniq.reject(&:empty?).sort{|x,y| x.to_i <=> y.to_i }
       end
 
       def [](code)
