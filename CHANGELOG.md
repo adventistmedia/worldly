@@ -1,3 +1,6 @@
+= Version 0.1.6 - 2015-04-09
+  * Fix: to_print method dup attributes to ensure original data not changed
+
 = Version 0.1.5 - 2014-07-04
   * Fix: country_code_options now sorts correctly by integer
 

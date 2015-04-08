@@ -37,6 +37,7 @@ module Worldly
     # attributes = {address1: '12 hey St', address2: '', locality:'Homeville', postcode: 'AHZ 312' }
     # sending country = 'AU'. If added the country name will be excluded from address
     def to_print(attributes, sending_country=nil)
+      attributes = attributes.dup
       # don't add country if sending from country
       unless sending_country.to_s.upcase == @code
         attributes.merge!({ country: name})
