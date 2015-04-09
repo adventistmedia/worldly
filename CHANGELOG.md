@@ -1,3 +1,6 @@
+= Version 0.1.7 - 2015-04-09
+  * Fix: format_values method - dup value to ensure original data not changed
+
 = Version 0.1.6 - 2015-04-09
   * Fix: to_print method dup attributes to ensure original data not changed
 
