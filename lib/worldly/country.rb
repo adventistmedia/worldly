@@ -26,11 +26,11 @@ module Worldly
     end
 
     def address_format
-      @data[:address_format] || "{{address1}}\n{{address2}}\n{{city}}\n{{region}} {{postcode}}\n{{country}}"
+      @data[:address_format] || "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{region}} {{postcode}}\n{{country}}"
     end
 
     def all_fields
-      [:address1, :address2, :country] + fields.keys
+      [:address1, :address2, :address3, :country] + fields.keys
     end
 
     # Generate an address for printing based on the countries address format.

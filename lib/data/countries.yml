@@ -9,7 +9,7 @@ AD:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{country}}"
 AE:
   name: United Arab Emirates
   alpha2: AE
@@ -18,7 +18,7 @@ AE:
   fields:
     city:
       label: City
-  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{country}}"
 AF:
   name: Afghanistan
   alpha2: AF
@@ -29,7 +29,7 @@ AF:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{postcode}}\n{{country}}"
 AG:
   name: Antigua and Barbuda
   alpha2: AG
@@ -55,7 +55,7 @@ AM:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{country}}"
 AN:
   name: Netherlands Antilles
   alpha2: AN
@@ -83,7 +83,7 @@ AR:
       label: 'Post Code'
     region:
       label: Province
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{country}}"
 AS:
   name: American Samoa
   alpha2: AS
@@ -92,7 +92,7 @@ AS:
   fields:
     city:
       label: City
-  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{country}}"
 AT:
   name: Austria
   alpha2: AT
@@ -103,7 +103,7 @@ AT:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{country}}"
 AU:
   name: Australia
   alpha2: AU
@@ -120,7 +120,7 @@ AU:
         - upcase
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
 AW:
   name: Aruba
   alpha2: AW
@@ -141,7 +141,7 @@ AZ:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{country}}"
 BA:
   name: Bosnia and Herzegovina
   alpha2: BA
@@ -226,7 +226,7 @@ BR:
       label: State
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{region}}\n{{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{city}} {{region}}\n{{postcode}}\n{{country}}"
 BS:
   name: Bahamas
   alpha2: BS
@@ -237,7 +237,7 @@ BS:
       label: City
     region:
       label: Island
-  address_format: "{{address1}}\n{{address2}}\n{{city}}, {{region}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}, {{region}}\n{{country}}"
 BT:
   name: Bhutan
   alpha2: BT
@@ -281,7 +281,7 @@ CA:
       label: 'Postal Code'
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{region}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}} {{postcode}}\n{{region}}\n{{country}}"
 CC:
   name: Cocos (Keeling) Islands
   alpha2: CC
@@ -312,7 +312,7 @@ CH:
       label: City
     postcode:
       label: 'Postal Code'
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{country}}"
 CI:
   name: Côte D'Ivoire
   alpha2: CI
@@ -351,7 +351,7 @@ CN:
         - upcase
     region:
       label: Province
-  address_format: "{{address1}}\n{{address2}}\n{{locality}} {{city}}\n{{postcode}} {{region}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}} {{city}}\n{{postcode}} {{region}}\n{{country}}"
 CO:
   name: Colombia
   alpha2: CO
@@ -448,7 +448,7 @@ EG:
     postcode:
       label: 'Post Code'
       required: false
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}"
 EH:
   name: Western Sahara
   alpha2: EH
@@ -521,7 +521,7 @@ GB:
       label: 'Post Code'
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{city}}\n{{postcode}}\n{{country}}"
 GD:
   name: Grenada
   alpha2: GD
@@ -606,7 +606,7 @@ GU:
       label: State
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
 GW:
   name: Guinea-Bissau
   alpha2: GW
@@ -660,7 +660,7 @@ ID:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}"
 IE:
   name: Ireland
   alpha2: IE
@@ -675,7 +675,7 @@ IE:
     postcode:
       label: 'Post Code'
       required: false
-  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{region}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{region}} {{postcode}}\n{{country}}"
 IL:
   name: Israel
   alpha2: IL
@@ -686,7 +686,7 @@ IL:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}} {{postcode}}\n{{country}}"
 IM:
   name: Isle of Man
   alpha2: IM
@@ -704,7 +704,7 @@ IN:
         - upcase
     postcode:
       label: 'PIN Code'
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}} {{postcode}}\n{{country}}"
 IO:
   name: British Indian Ocean Territory
   alpha2: IO
@@ -750,7 +750,7 @@ JO:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}} {{postcode}}\n{{country}}"
 JP:
   name: Japan
   alpha2: JP
@@ -914,7 +914,7 @@ MK:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{postcode}} {{city}}\n{{country}}"
 ML:
   name: Mali
   alpha2: ML
@@ -994,7 +994,7 @@ MY:
       label: State
       format:
         - fullname
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{region}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{region}}\n{{country}}"
 MZ:
   name: Mozambique
   alpha2: MZ
@@ -1068,7 +1068,7 @@ NZ:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{city}} {{postcode}}\n{{country}}"
 OM:
   name: Oman
   alpha2: OM
@@ -1142,7 +1142,7 @@ PT:
       label: City
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{postcode}} {{city}}\n{{country}}"
 PW:
   name: Palau
   alpha2: PW
@@ -1185,7 +1185,7 @@ RU:
       label: Province
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{region}}\n{{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{region}}\n{{postcode}}\n{{country}}"
 RW:
   name: Rwanda
   alpha2: RW
@@ -1225,7 +1225,7 @@ SE:
       label: 'Post Code'
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{postcode}} {{city}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{postcode}} {{city}}\n{{country}}"
 SG:
   name: Singapore
   alpha2: SG
@@ -1234,7 +1234,7 @@ SG:
   fields:
     postcode:
       label: 'Post Code'
-  address_format: "{{address1}}\n{{address2}}\n{{country}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{country}} {{postcode}}\n{{country}}"
 SH:
   name: Saint Helena
   alpha2: SH
@@ -1419,7 +1419,7 @@ US:
       label: State
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}} {{region}} {{postcode}}\n{{country}}"
 UY:
   name: Uruguay
   alpha2: UY
@@ -1480,7 +1480,7 @@ WS:
       label: City
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{city}}\n{{region}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{region}}\n{{country}}"
 YE:
   name: Yemen
   alpha2: YE
@@ -1506,7 +1506,7 @@ ZA:
     region:
       label: Province
       required: false
-  address_format: "{{address1}}\n{{address2}}\n{{locality}}\n{{city}}\n{{region}}\n{postcode}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{locality}}\n{{city}}\n{{region}}\n{postcode}}\n{{country}}"
 ZM:
   name: Zambia
   alpha2: ZM
