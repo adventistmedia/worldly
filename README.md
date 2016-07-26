@@ -108,6 +108,16 @@ To have the address formatted correctly for mailing use to_print(attributes, sen
   country.to_print({address1: '12 hey St', region:'NSW', postcode: '2000' }, 'AU')
   => "12 hey St\nNSW 2000"
 ```
+
+There is also a to_display method which ignores certain address formatting rules:
+
+```
+  country.to_print({address1: '12 hey St', address2: '', postcode: '2000', city: 'Newtown', state:'NSW'})
+  => "12 hey St\nNEWTOWN 2000\nAustralia"
+  country.to_display({address1: '12 hey St', address2: '', postcode: '2000', city: 'Newtown', state:'NSW'})
+  => "12 hey St\nNewtown 2000\nAustralia"
+```
+
 ## Contributing
 
 If you find a country with mission regions, or a country missing address formatting information you can create a issue ticket with corrections.

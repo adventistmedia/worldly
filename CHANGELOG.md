@@ -1,3 +1,5 @@
+= Version 0.1.9 - 2016-07-26
+  * Improvement: Added to_display method
 = Version 0.1.8 - 2016-01-20
   * Improvement: Address line 3 not accepted
 = Version 0.1.7 - 2015-04-09

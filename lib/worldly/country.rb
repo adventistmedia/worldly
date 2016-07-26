@@ -51,6 +51,24 @@ module Worldly
       .strip
     end
 
+    # Generate an address for printing based on the countries address format.
+    # attributes = {address1: '12 hey St', address2: '', locality:'Homeville', postcode: 'AHZ 312' }
+    # sending country = 'AU'. If added the country name will be excluded from address
+    def to_display(attributes, sending_country=nil)
+      # don't add country if sending from country
+      unless sending_country.to_s.upcase == @code
+        attributes.merge!({ country: name})
+      end
+      print = address_format.dup
+      all_fields.each do |f|
+        print.gsub!("{{#{f}}}", format_values(f, attributes[f].to_s, ignore_rules: ['upcase']) )
+      end
+      print.squeeze(' ')
+      .gsub(/\A\s+\n|\n\s+|\s+\n\s+\Z/, "\n")
+      .squeeze("\n")
+      .strip
+    end
+
     def has_field?(f)
       fields.key?(f)
     end
@@ -127,13 +145,18 @@ module Worldly
     # Format a value e.g :region, 'NY'
     # apply any formatting rules
     #  - if rule fullname included change the region to it's full name - New York
-    def format_values(field, value)
+    # options = ignore_rules: ['upcase']
+    def format_values(field, value, options={})
       value = value.dup
       value.to_s.strip!
       if !fields.key?(field) || fields[field][:format].nil?
         return value
       end
       rules = fields[field][:format].dup
+      # ignore rules
+      if options[:ignore_rules]
+        rules = rules - options[:ignore_rules]
+      end
       # use fullname rather than abbreviated
       # fullname rule must be applied first!
       if rules.delete('fullname') && regions[value]
