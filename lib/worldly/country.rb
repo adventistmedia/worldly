@@ -34,7 +34,7 @@ module Worldly
     end
 
     # Generate an address for printing based on the countries address format.
-    # attributes = {address1: '12 hey St', address2: '', locality:'Homeville', postcode: 'AHZ 312' }
+    # attributes = {address1: '12 hey St', address2: '', city: 'Homeville', postcode: 'AHZ 312' }
     # sending country = 'AU'. If added the country name will be excluded from address
     def to_print(attributes, sending_country=nil)
       # don't add country if sending from country
@@ -52,7 +52,7 @@ module Worldly
     end
 
     # Generate an address for printing based on the countries address format.
-    # attributes = {address1: '12 hey St', address2: '', locality:'Homeville', postcode: 'AHZ 312' }
+    # attributes = {address1: '12 hey St', address2: '', city: 'Homeville', postcode: 'AHZ 312' }
     # sending country = 'AU'. If added the country name will be excluded from address
     def to_display(attributes, sending_country=nil)
       # don't add country if sending from country

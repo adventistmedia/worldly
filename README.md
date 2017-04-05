@@ -52,7 +52,7 @@ Retrieve a country using it's country code
   country.alpha3 => AUS
   country.country_code => 61
 ```
-Worldly uses the address fields locality, city, region & postcode. Address1, Address2 and Country are implied and hence not added. A call to country.fields will return the fields not implied that the country address uses.
+Worldly uses the address fields city, region & postcode. Address1, Address2 and Country are implied and hence not added. A call to country.fields will return the fields not implied that the country address uses.
 ```
   country.fields => {:city=>{:label=>"City", :format=>["upcase"], :required=>true}, :region=>{:label=>"State", :format=>["upcase"], :required=>true}, :postcode=>{:label=>"Post Code", :required=>true}}
 ```
@@ -67,7 +67,6 @@ Each field notes the following details:
 Field Methods
 ```
   country.has_field?(:city) => true
-  country.has_field?(:locality) => false
   country.required_fields => {:city=>{:label=>"City", :format=>["upcase"], :required=>true}, :region=>{:label=>"State", :format=>["upcase"], :required=>true}, :postcode=>{:label=>"Post Code", :required=>true}}
 ```
 To retrieve all fields including address1, address2 & country use
