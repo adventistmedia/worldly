@@ -1462,7 +1462,7 @@ WS:
       label: City
       format:
         - upcase
-  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{region}}\n{{country}}"
+  address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{country}}"
 YE:
   name: Yemen
   alpha2: YE
