@@ -1,3 +1,5 @@
+= Version 1.0.1 - 2017-04-05
+  * Fix: Samoa address format fixed by removing region.
 = Version 1.0.0 - 2017-04-05
   * Change: Removed Locality
   * Change: Updated some country formats
@@ -7,7 +9,7 @@
 
 = Version 0.1.8 - 2016-01-20
   * Improvement: Address line 3 not accepted
-  
+
 = Version 0.1.7 - 2015-04-09
   * Fix: format_values method - dup value to ensure original data not changed
 
