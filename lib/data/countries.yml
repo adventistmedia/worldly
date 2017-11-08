@@ -1049,8 +1049,9 @@ NZ:
   fields:
     city:
       label: Suburb
+      required: false
     region:
-      label: City
+      label: Town/City
     postcode:
       label: 'Post Code'
   address_format: "{{address1}}\n{{address2}}\n{{address3}}\n{{city}}\n{{region}} {{postcode}}\n{{country}}"

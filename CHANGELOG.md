@@ -1,3 +1,5 @@
+= Version 1.0.2 - 2017-11-08
+  * Fix: NZ suburb optional.
 = Version 1.0.1 - 2017-04-05
   * Fix: Samoa address format fixed by removing region.
 = Version 1.0.0 - 2017-04-05
